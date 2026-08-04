@@ -1,0 +1,21 @@
+:root {
+  --rojo: #c8102e;
+  --rojo-oscuro: #7a0c1e;
+  --rojo-brasa: #e8493c;
+  --blanco: #ffffff;
+  --hueso: #f6f3ef;
+  --negro: #141110;
+  --gris: #6b6360;
+}
+.got {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  filter: brightness(50%);
+}
+
+.img {
+  height: 70vh;
+  object-fit: cover;
+  filter: brightness(50%);
+}
