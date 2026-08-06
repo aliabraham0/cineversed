@@ -8,6 +8,19 @@
   --gris: #6b6360;
 }
 
+
+.main{
+  background-color: var(--negro);
+}
+
+.planes-section {
+  background: linear-gradient(
+    180deg,
+    var(--negro),
+    var(--rojo-oscuro)
+  );
+}
+
 .btn-god {
   background-color: var(--negro);
   color: var(--hueso);
@@ -73,7 +86,7 @@
 .titulo-seccion {
   font-size: 32px;
   font-weight: 800;
-  color: var(--negro);
+  color: var(--blan);
 }
 
 .ver-todo {
@@ -117,4 +130,111 @@
   margin: 0;
   color: var(--gris);
   font-size: 14px;
+}
+
+.planes-section {
+  color:var(--blanco);
+}
+
+.titulo-planes {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.subtitulo-planes {
+  color: var(--blanco);
+}
+
+.planes-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.plan-card {
+  position: relative;
+  width: 260px;
+  padding: 30px 25px;
+  background: var(--negro);
+  border: 1px solid var(--blanco);
+  border-radius: 12px;
+  text-align: center;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--rojo-oscuro);
+}
+
+.plan-card h3 {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.plan-descripcion {
+  color: var(--blanco);
+  min-height: 45px;
+}
+
+.precio {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--blanco);
+  margin: 20px 0;
+}
+
+.precio span {
+  font-size: 14px;
+  color: var(--blanco);
+}
+
+.plan-card ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.plan-card li {
+  padding: 7px 0;
+  color:var(--blanco);
+}
+
+.btn-plan {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background: var(--rojo-oscuro);
+  color: var(--blanco);
+  border-radius: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-plan:hover {
+  background: var(--rojo-brasa);
+  color: var(--blanco);
+}
+
+.plan-destacado {
+  border: 2px solid #7a0c1e;
+  transform: scale(1.03);
+}
+
+.plan-popular {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--rojo-oscuro);
+  padding: 5px 15px;
+  border-radius: 25px;
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
 }
