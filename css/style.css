@@ -1,0 +1,120 @@
+:root {
+  --rojo: #c8102e;
+  --rojo-oscuro: #7a0c1e;
+  --rojo-brasa: #e8493c;
+  --blanco: #ffffff;
+  --hueso: #f6f3ef;
+  --negro: #141110;
+  --gris: #6b6360;
+}
+
+.btn-god {
+  background-color: var(--negro);
+  color: var(--hueso);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 10px;
+  object-fit: contain;
+  border: 2px solid var(--hueso);
+}
+.got {
+  width: 50px;
+  height: 50px;
+}
+
+.btn-olo {
+  background-color: var(--negro);
+  color: var(--hueso);
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 10px;
+  object-fit: contain;
+  border: 2px solid var(--hueso);
+}
+
+.btn-gof {
+  display: inline-block;
+  padding: 5px 5px;
+  filter: brightness(50%);
+}
+
+.got {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  filter: brightness(50%);
+}
+
+.img {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.imagen-contenedor img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%);
+}
+.texto-imagen {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px;
+  color: var(--blanco);
+  background: linear-gradient(transparent, var(--negro));
+}
+.titulo-seccion {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--negro);
+}
+
+.ver-todo {
+  color: var(--rojo-oscuro);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.pelicula-card {
+  cursor: pointer;
+}
+
+.pelicula-img {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: var(--negro);
+}
+
+.pelicula-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.pelicula-card:hover .pelicula-img img {
+  transform: scale(1.05);
+}
+
+.pelicula-card h5 {
+  margin-top: 12px;
+  margin-bottom: 5px;
+  color: var(--negro);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.pelicula-card p {
+  margin: 0;
+  color: var(--gris);
+  font-size: 14px;
+}
