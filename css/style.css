@@ -56,12 +56,18 @@
   object-fit: cover;
   filter: brightness(50%);
 }
+.contendor-SOS{
+  background-color: var(--rojo) !important;
+
+}
 
 .img {
   width: 100%;
-  height: 400px;
+  height: 500px;
   overflow: hidden;
   border-radius: 15px;
+  object-fit: cover;
+  
 }
 
 .imagen-contenedor img {
@@ -235,9 +241,10 @@
   white-space: nowrap;
 }
 
+
 .gode{
   border-radius: 20px;
-  border: 5px solid var(--negro);
+  border: 3.5px solid var(--negro);
   padding: 20px 10px;
   background: linear-gradient(135deg,
     var(--negro) 0%,
@@ -248,11 +255,8 @@
 
 .titulo-equipo {
   color: var(--blanco);
-
   font-size: 36px;
-
   font-weight: 800;
-
   margin-bottom: 10px;
 }
 
