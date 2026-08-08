@@ -20,16 +20,11 @@
   background-color: var(--negro);
   color: var(--hueso);
   padding: 10px 20px;
-  border: none;
   border-radius: 5px;
   text-align: center;
   line-height: 10px;
   object-fit: contain;
   border: 2px solid var(--hueso);
-}
-.got {
-  width: 50px;
-  height: 50px;
 }
 
 .btn-olo {
@@ -57,18 +52,20 @@
   filter: brightness(50%);
 }
 
-.img {
-  width: 100%;
-  height: 400px;
+.contenedor-imagen{
+  position: relative;
+  height: 420px;
   overflow: hidden;
   border-radius: 15px;
 }
 
-.imagen-contenedor img {
+.contenedor-imagen img{
   width: 100%;
-  height: 100%;
+  height:500px;
   object-fit: cover;
+  object-position:center;
   filter: brightness(50%);
+  border-radius:15px;
 }
 .texto-imagen {
   position: absolute;
@@ -80,9 +77,9 @@
   background: linear-gradient(transparent, var(--negro));
 }
 .titulo-seccion {
-  font-size: 32px;
+  font-size:423;
   font-weight: 800;
-  color: var(--blan);
+  color: var(--blanco);
 }
 
 .ver-todo {
