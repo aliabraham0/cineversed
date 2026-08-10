@@ -44,7 +44,7 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon text-white"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto gap-lg-4 text-center py-3 py-lg-0">
@@ -66,7 +66,9 @@
                 <a class="nav-link text-white" href="#">Ayudas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Planes</a>
+                <a class="nav-link text-white" href="./page/planes.html"
+                  >Planes</a
+                >
               </li>
             </ul>
             <form class="d-flex align-items-center gap-4" role="search">
@@ -76,7 +78,7 @@
                 placeholder="Buscar películas"
                 aria-label="Buscar películas"
               />
-              <a href="#" class="btn btn-outline-light btn-god gap-2">
+              <a href="#" class="btn btn-outline-light btn-god gap-2 text-nowrap">
                 Iniciar sesión
               </a>
               <a href="#" class="btn btn-danger"> Suscribirse </a>
@@ -85,8 +87,8 @@
         </div>
       </nav>
     </header>
-    <main class="flex-grow-1 bg-body-tertiary">
-      <section class="container my-3">
+    <main class="flex-grow-0 contenedor-color">
+      <section class="container">
         <div
           id="carouselExampleRide"
           class="carousel slide"
@@ -95,8 +97,8 @@
           <div class="carousel-inner">
             <div class="carousel-item active contenedor-imagen">
               <img
-                src="img/Avengers Infinity war.jpg"
-                class="d-block w-100 img"
+                src="./img/avengers-infinity-war-poster.avif "
+                class="d-block w-100"
                 alt="..."
               />
               <div class="texto-imagen">
@@ -124,7 +126,7 @@
 
             <div class="carousel-item contenedor-imagen">
               <img
-                src="img/los amos del aire.jpg"
+                src="img/Masters_of_the_Air_key_art_graphic_header_4_1_show_home.jpg.og.jpg"
                 class="d-block w-100 img"
                 alt="..."
               />
@@ -152,18 +154,14 @@
             </div>
 
             <div class="carousel-item contenedor-imagen">
-              <img
-                src="img/Spider-man into the spider verse.jpg"
-                class="d-block w-100 img"
-                alt="..."
-              />
+              <img src="img/asdsa.jpg" class="d-block w-100 img" alt="..." />
               <div class="texto-imagen">
                 <h2>Spider-Man: Into the Spider-Verse</h2>
                 <div class="d-flex gap-2 mb-3 flex-wrap">
-                  <span class="badge-meta badge rounded-2 px-2 py-1">2026</span>
+                  <span class="badge-meta badge rounded-2 px-2 py-1">2018</span>
                   <span class="badge-meta badge rounded-2 px-2 py-1">+16</span>
                   <span class="badge-meta badge rounded-2 px-2 py-1"
-                    >1h 57mim</span
+                    >1h 57min</span
                   >
                   <span class="badge-meta badge rounded-2 px-2 py-1"
                     >Animación</span
@@ -201,25 +199,22 @@
           </button>
         </div>
       </section>
-      <article>
+      <article class="bg-white">
         <div>
-          <h1 class="text-center">Las mejores películas</h1>
+          <h1 class="text-center contenedor-h1">Las mejores películas</h1>
         </div>
         <section class="container my-5" id="peliculas">
           <div class="d-flex justify-content-between align-items-center mb-4">
             <h2 class="titulo-seccion">TENDENCIAS AHORA</h2>
 
-            <a href="#" class="ver-todo"> VER TODO → </a>
+            <a href="./page/error404.html" class="ver-todo"> VER TODO → </a>
           </div>
 
           <div class="row g-3">
             <div class="col-6 col-md-4 col-lg">
               <div class="pelicula-card">
                 <div class="pelicula-img">
-                  <img
-                    src="img/venom.jpg"
-                    alt="Venom"
-                  />
+                  <img src="img/venom.jpg" alt="Venom" />
                 </div>
 
                 <h5>VENOM</h5>
@@ -252,7 +247,10 @@
             <div class="col-6 col-md-4 col-lg">
               <div class="pelicula-card">
                 <div class="pelicula-img">
-                  <img src="img/Las Gerra Galaxia Star Wars.jpg" alt="Las Guerras de la Galaxia" />
+                  <img
+                    src="img/Las Gerra Galaxia Star Wars.jpg"
+                    alt="Las Guerras de la Galaxia"
+                  />
                 </div>
 
                 <h5>LAS GUERRAS DE LA GALAXIA</h5>
@@ -275,7 +273,7 @@
 
         <section class="container my-5" id="series">
           <div class="d-flex justify-content-between align-items-center mb-4">
-            <h2 class="titulo-seccion">RECOMENDADAS PARA TI </h2>
+            <h2 class="titulo-seccion">RECOMENDADAS PARA TI</h2>
 
             <a href="#" class="ver-todo"> VER TODO → </a>
           </div>
@@ -284,10 +282,7 @@
             <div class="col-6 col-md-4 col-lg">
               <div class="pelicula-card">
                 <div class="pelicula-img">
-                  <img
-                    src="img/Asi aprenderas.jpg"
-                    alt="Así aprenderás"
-                  />
+                  <img src="img/Asi aprenderas.jpg" alt="Así aprenderás" />
                 </div>
 
                 <h5>ASÍ APRENDERÁS</h5>
@@ -298,7 +293,10 @@
             <div class="col-6 col-md-4 col-lg">
               <div class="pelicula-card">
                 <div class="pelicula-img">
-                  <img src="img/las casa de papel.jpg" alt="Las Casas de Papel" />
+                  <img
+                    src="img/las casa de papel.jpg"
+                    alt="Las Casas de Papel"
+                  />
                 </div>
 
                 <h5>LAS CASAS DE PAPEL</h5>
@@ -340,76 +338,94 @@
             </div>
           </div>
         </section>
-
       </article>
     </main>
-    <footer>
-      <footer class="footer bg-black text-white">
-        <div class="container py-3">
-          <div class="row">
-            <div class="col-md-4 mb-4">
-              <h3 class="logo"><span></span>Cineversed</h3>
 
-              <p class="text-secondary">
-                Disfrutá de tus películas y series favoritas en un solo lugar.
-              </p>
-            </div>
+    <footer class="footer bg-black text-white">
+      <div class="container py-3">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <h3 class="logo"><span></span>Cineversed</h3>
 
-            <div class="col-md-2 col-6 mb-4">
-              <h5>Explorar</h5>
-
-              <ul class="list-unstyled">
-                <li><a class="text-white" href="index.html">Inicio</a></li>
-                <li><a class="text-white" href="#peliculas">Películas</a></li>
-                <li><a class="text-white" href="#series">Series</a></li>
-                <li><a class="text-white" href="#">Planes</a></li>
-              </ul>
-            </div>
-
-            <div class="col-md-3 col-6 mb-4">
-              <h5>Soporte</h5>
-
-              <ul class="list-unstyled">
-                <li><a class="text-white" href="#">Preguntas frecuentes</a></li>
-                <li><a class="text-white" href="#">Contacto</a></li>
-                <li><a class="text-white" href="#">Sobre nosotros</a></li>
-              </ul>
-            </div>
-
-            <div class="col-md-3 col-6 mb-4">
-              <h5>Legal</h5>
-
-              <ul class="list-unstyled">
-                <li>
-                  <a class="text-white" href="#">Términos y condiciones</a>
-                </li>
-                <li><a class="text-white" href="#">Privacidad</a></li>
-              </ul>
-            </div>
-
-            <div class="col-md-3 mb-4">
-              <h5>Seguinos</h5>
-
-              <div class="d-flex gap-3 mt-3">
-                <a class="text-white" href="#" class="social"> Facebook </a>
-
-                <a class="text-white" href="#" class="social"> Instagram </a>
-
-                <a class="text-white" href="#" class="social"> X </a>
-              </div>
-            </div>
-          </div>
-          <hr />
-
-          <div
-            class="d-flex justify-content-between align-items-center flex-wrap"
-          >
-            <p class="mb-0 text-secondary mx-auto">
-              © 2026 Cineversed. Todos los derechos reservados.
+            <p class="text-secondary">
+              Disfrutá de tus películas y series favoritas en un solo lugar.
             </p>
           </div>
+
+          <div class="col-md-2 col-6 mb-4">
+            <h5>Explorar</h5>
+
+            <ul class="list-unstyled">
+              <li><a class="text-white" href="index.html">Inicio</a></li>
+              <li><a class="text-white" href="#peliculas">Películas</a></li>
+              <li><a class="text-white" href="#series">Series</a></li>
+              <li>
+                <a class="text-white" href="./page/planes.html">Planes</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 col-6 mb-4">
+            <h5>Soporte</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a class="text-white" href="./page/pregutas.html"
+                  >Preguntas frecuentes</a
+                >
+              </li>
+              <li>
+                <a class="text-white" href="./page/error404.html">Contacto</a>
+              </li>
+              <li>
+                <a class="text-white" href="./page/Sobre nosotros.html"
+                  >Sobre nosotros</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 col-6 mb-4">
+            <h5>Legal</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a class="text-white" href="./page/error404.html"
+                  >Términos y condiciones</a
+                >
+              </li>
+              <li>
+                <a class="text-white" href="./page/error404.html">Privacidad</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 mb-4">
+            <h5>Seguinos</h5>
+
+            <div class="d-flex gap-3 mt-3">
+              <a class="text-white social" href="./page/error404.html">
+                Facebook
+              </a>
+
+              <a class="text-white social" href="./page/error404.html">
+                Instagram
+              </a>
+
+              <a class="text-white social" href="./page/error404.html"> X </a>
+            </div>
+          </div>
         </div>
-      </footer>
+        <hr />
+
+        <div
+          class="d-flex justify-content-between align-items-center flex-wrap"
+        >
+          <p class="mb-0 text-secondary mx-auto">
+            © 2026 Cineversed. Todos los derechos reservados.
+          </p>
+        </div>
+      </div>
     </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

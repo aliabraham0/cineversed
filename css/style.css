@@ -8,20 +8,23 @@
   --gris: #6b6360;
 }
 
+.main {
+  background-color: var(--negro);
+}
+
+.planes-section {
+  background: linear-gradient(180deg, var(--negro), var(--rojo-oscuro));
+}
+
 .btn-god {
   background-color: var(--negro);
   color: var(--hueso);
   padding: 10px 20px;
-  border: none;
   border-radius: 5px;
   text-align: center;
   line-height: 10px;
   object-fit: contain;
   border: 2px solid var(--hueso);
-}
-.got {
-  width: 50px;
-  height: 50px;
 }
 
 .btn-olo {
@@ -34,6 +37,9 @@
   line-height: 10px;
   object-fit: contain;
   border: 2px solid var(--hueso);
+}
+.contenedor-color{
+   background: linear-gradient(180deg, var(--negro), var(--rojo-oscuro));
 }
 
 .btn-gof {
@@ -48,21 +54,42 @@
   object-fit: cover;
   filter: brightness(50%);
 }
+.contenedor-h1{
+  color: var(--hueso);
+ background: linear-gradient(180deg, var(--negro), var(--rojo-oscuro));
 
-.img {
-  width: 100%;
-  height: 400px;
+}
+
+
+.contenedor-imagen{
+  position: relative;
+  height: 420px;
   overflow: hidden;
   border-radius: 15px;
 }
-.imagen-contenedor img {
+
+.contenedor-imagen img{
   width: 100%;
-  height: 100%;
+  height:500px;
   object-fit: cover;
+  object-position:center;
   filter: brightness(50%);
+  border-radius:15px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;    
+  height: 50px;     
+  top: 50%;       
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5); 
+  border-radius: 50%;
+  z-index: 3;
 }
 .texto-imagen {
   position: absolute;
+  z-index: 2;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -71,7 +98,7 @@
   background: linear-gradient(transparent, var(--negro));
 }
 .titulo-seccion {
-  font-size: 32px;
+  font-size:423;
   font-weight: 800;
   color: var(--negro);
 }
@@ -117,4 +144,251 @@
   margin: 0;
   color: var(--gris);
   font-size: 14px;
+}
+
+.planes-section {
+  color: var(--blanco);
+}
+
+.titulo-planes {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.subtitulo-planes {
+  color: var(--blanco);
+}
+
+.planes-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.plan-card {
+  position: relative;
+  width: 260px;
+  padding: 30px 25px;
+  background: var(--negro);
+  border: 1px solid var(--blanco);
+  border-radius: 12px;
+  text-align: center;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--rojo-oscuro);
+}
+
+.plan-card h3 {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.plan-descripcion {
+  color: var(--blanco);
+  min-height: 45px;
+}
+
+.precio {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--blanco);
+  margin: 20px 0;
+}
+
+.precio span {
+  font-size: 14px;
+  color: var(--blanco);
+}
+
+.plan-card ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.plan-card li {
+  padding: 7px 0;
+  color: var(--blanco);
+}
+
+.btn-plan {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background: var(--rojo-oscuro);
+  color: var(--blanco);
+  border-radius: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-plan:hover {
+  background: var(--rojo-brasa);
+  color: var(--blanco);
+}
+
+.plan-destacado {
+  border: 2px solid #7a0c1e;
+  transform: scale(1.03);
+}
+
+.plan-popular {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--rojo-oscuro);
+  padding: 5px 15px;
+  border-radius: 25px;
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.gode{
+  border-radius: 20px;
+  border: 5px solid var(--negro);
+  padding: 20px 10px;
+  background: linear-gradient(135deg,
+    var(--negro) 0%,
+    var(--rojo-oscuro) 60%,
+    var(--rojo) 100%
+  );
+}
+
+.titulo-equipo {
+  color: var(--blanco);
+
+  font-size: 36px;
+
+  font-weight: 800;
+
+  margin-bottom: 10px;
+}
+
+.descripcion-equipo {
+  color: var(--gris);
+
+  font-size: 17px;
+}
+
+.foto-persona {
+  width: 140px;
+  height: 140px;
+
+  margin: 0 auto 20px;
+
+  border-radius: 50%;
+
+  overflow: hidden;
+
+  border: 5px solid var(--rojo-oscuro);
+
+  background-color: var(--blanco);
+}
+
+
+.foto-persona img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.col-lg-3 h3 {
+  color: var(--blanco);
+
+  font-size: 24px;
+
+  font-weight: 700;
+
+  margin-bottom: 5px;
+}
+
+.cargo {
+  display: inline-block;
+
+  color: var(--rojo);
+
+  font-weight: 700;
+
+  margin-bottom: 12px;
+}
+
+.col-lg-3 p {
+  max-width: 320px;
+
+  margin: 0 auto;
+
+  color: var(--gris);
+
+  line-height: 1.6;
+}
+
+.error-404 {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  background: linear-gradient(135deg,
+    var(--negro) 0%,
+    var(--rojo-oscuro) 60%,
+    var(--rojo) 100%
+  );
+  color: var(--blanco);
+}
+
+.error-contenido {
+  max-width: 700px;
+}
+
+.error-numero {
+  display: block;
+  font-size: clamp(120px, 20vw, 240px);
+  font-weight: 900;
+  line-height: 0.9;
+  color: var(--blanco);
+  text-shadow: 8px 8px 0 var(--rojo-oscuro);
+}
+
+.error-contenido h1 {
+  margin-top: 35px;
+  font-size: clamp(28px, 5vw, 48px);
+  font-weight: 800;
+}
+
+.error-contenido p {
+  max-width: 550px;
+  margin: 20px auto 30px;
+  color: var(--hueso);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.btn-error {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: var(--blanco);
+  color: var(--rojo-oscuro);
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-error:hover {
+  background-color: var(--rojo-brasa);
+  color: var(--blanco);
+  transform: translateY(-3px);
 }
