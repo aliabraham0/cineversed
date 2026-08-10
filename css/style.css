@@ -38,6 +38,9 @@
   object-fit: contain;
   border: 2px solid var(--hueso);
 }
+.contenedor-color{
+   background: linear-gradient(180deg, var(--negro), var(--rojo-oscuro));
+}
 
 .btn-gof {
   display: inline-block;
@@ -51,6 +54,12 @@
   object-fit: cover;
   filter: brightness(50%);
 }
+.contenedor-h1{
+  color: var(--hueso);
+ background: linear-gradient(180deg, var(--negro), var(--rojo-oscuro));
+
+}
+
 
 .contenedor-imagen{
   position: relative;
@@ -79,7 +88,7 @@
 .titulo-seccion {
   font-size:423;
   font-weight: 800;
-  color: var(--blanco);
+  color: var(--negro);
 }
 
 .ver-todo {
