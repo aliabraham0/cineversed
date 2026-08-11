@@ -27,7 +27,10 @@
     <header class="navbar-bg">
       <nav class="navbar navbar-expand-lg bg-black">
         <div class="container-fluid">
-          <a class="navbar-brand d-flex align-items-center" href="../index.html">
+          <a
+            class="navbar-brand d-flex align-items-center"
+            href="../index.html"
+          >
             <img
               class="navbar-brand got"
               src="../img/700BD687-DCB7-4918-AD38-F5FC415C221A.png"
@@ -81,6 +84,8 @@
               <a
                 href="#"
                 class="btn btn-outline-light btn-god gap-2 text-nowrap"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
               >
                 Iniciar sesión
               </a>
@@ -91,7 +96,7 @@
       </nav>
     </header>
     <main class="flex-grow-1 contenedor-color">
-   <section class="container py-5">
+      <section class="container py-5">
         <div class="text-center mb-5">
           <h1 class="titulo-peliculas">PELÍCULAS</h1>
 
@@ -101,11 +106,13 @@
           </p>
         </div>
 
-        
         <article class="pelicula-principal">
-          
           <div class="video-container">
-            <video  class="videos-img" controls poster="../img/avengers-infinity-war-poster.avif">
+            <video
+              class="videos-img"
+              controls
+              poster="../img/avengers-infinity-war-poster.avif"
+            >
               <source
                 src="../video/Avengers Infinity War - Trailer 2 ESPAÑOL LATINO 2018(720P_HD).mp4"
                 type="video/mp4"
@@ -115,7 +122,6 @@
             </video>
           </div>
 
-          
           <div class="biografia-pelicula">
             <span class="categoria text-white"> ACCIÓN · 2018 </span>
 
@@ -152,7 +158,6 @@
           </div>
         </article>
       </section>
-    
     </main>
 
     <footer class="footer bg-black text-white">
@@ -209,7 +214,9 @@
                 >
               </li>
               <li>
-                <a class="text-white" href="../page/error404.html">Privacidad</a>
+                <a class="text-white" href="../page/error404.html"
+                  >Privacidad</a
+                >
               </li>
             </ul>
           </div>
@@ -246,5 +253,57 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content contenedor-color text-white">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Iniciar Sesion
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="./page/error404.html">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >contraseña</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  required
+                />
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+                Iniciar Sesion
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
