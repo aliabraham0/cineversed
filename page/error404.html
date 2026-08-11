@@ -56,8 +56,8 @@
                 <a
                   class="nav-link active text-white text-nowrap"
                   aria-current="page"
-                    data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
                   href="../index.html"
                   >Inicio</a
                 >
@@ -86,7 +86,12 @@
                 placeholder="Buscar películas"
                 aria-label="Buscar películas"
               />
-              <a href="#" class="btn btn-outline-light btn-god gap-2 text-nowrap">
+              <a
+                href="#"
+                class="btn btn-outline-light btn-god gap-2 text-nowrap"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
                 Iniciar sesión
               </a>
               <a href="#" class="btn btn-danger"> Suscribirse </a>
@@ -97,97 +102,100 @@
     </header>
     <main class="flex-grow-1 planes-section">
       <section class="error-404">
+        <div class="error-contenido">
+          <span class="error-numero">404</span>
 
-          <div class="error-contenido">
-              <span class="error-numero">404</span>
-              
-              <h1>¡Corte! Esta página no existe</h1>
-              
-              <p>
-                  Parece que esta película se perdió del catálogo. La página que estás
-          buscando no está disponible.
-        </p>
-        
-        <a href="../index.html" class="btn btn-error"> Volver al inicio </a>
-    </div>
-</section>
-</main>
-    <footer class="footer bg-black text-white">
-        <div class="container py-3">
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <h3 class="logo"><span></span>Cineversed</h3>
-                    
-                    <p class="text-secondary">
-                        Disfrutá de tus películas y series favoritas en un solo lugar.
-                    </p>
-                </div>
-                
-                <div class="col-md-2 col-6 mb-4">
-                    <h5>Explorar</h5>
-                    
-                    <ul class="list-unstyled">
-                        <li><a class="text-white" href="../index.html">Inicio</a></li>
-                        <li><a class="text-white" href="#peliculas">Películas</a></li>
-                        <li><a class="text-white" href="#series">Series</a></li>
-                        <li><a class="text-white" href="planes.html">Planes</a></li>
-                    </ul>
-                </div>
-                
-                <div class="col-md-3 col-6 mb-4">
-                    <h5>Soporte</h5>
-                    
-                    <ul class="list-unstyled">
-                        <li><a class="text-white" href="./pregutas.html">Preguntas frecuentes</a></li>
-                        <li><a class="text-white" href="">Contacto</a></li>
-                        <li>
-                            <a class="text-white" href="Sobre nosotros.html"
-                            >Sobre nosotros</a
-                            >
-                        </li>
-                    </ul>
-                </div>
-                
-                <div class="col-md-3 col-6 mb-4">
-                    <h5>Legal</h5>
-                    
-                    <ul class="list-unstyled">
-                        <li>
-                            <a class="text-white" href="#">Términos y condiciones</a>
-                        </li>
-                        <li><a class="text-white" href="#">Privacidad</a></li>
-                    </ul>
-                </div>
-                
-                <div class="col-md-3 mb-4">
-                    <h5>Seguinos</h5>
-                    
-                    <div class="d-flex gap-3 mt-3">
-                        <a class="text-white" href="#" class="social"> Facebook </a>
-                        
-                        <a class="text-white" href="#" class="social"> Instagram </a>
-                        
-                        <a class="text-white" href="#" class="social"> X </a>
-                    </div>
-                </div>
-            </div>
-            <hr />
-            
-            <div
-            class="d-flex justify-content-between align-items-center flex-wrap"
-            >
-            <p class="mb-0 text-secondary mx-auto">
-                © 2026 Cineversed. Todos los derechos reservados.
-            </p>
+          <h1>¡Corte! Esta página no existe</h1>
+
+          <p>
+            Parece que esta película se perdió del catálogo. La página que estás
+            buscando no está disponible.
+          </p>
+
+          <a href="../index.html" class="btn btn-error"> Volver al inicio </a>
         </div>
-    </div>
-</footer>
-<script
+      </section>
+    </main>
+    <footer class="footer bg-black text-white">
+      <div class="container py-3">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <h3 class="logo"><span></span>Cineversed</h3>
+
+            <p class="text-secondary">
+              Disfrutá de tus películas y series favoritas en un solo lugar.
+            </p>
+          </div>
+
+          <div class="col-md-2 col-6 mb-4">
+            <h5>Explorar</h5>
+
+            <ul class="list-unstyled">
+              <li><a class="text-white" href="../index.html">Inicio</a></li>
+              <li><a class="text-white" href="#peliculas">Películas</a></li>
+              <li><a class="text-white" href="#series">Series</a></li>
+              <li><a class="text-white" href="planes.html">Planes</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 col-6 mb-4">
+            <h5>Soporte</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a class="text-white" href="./pregutas.html"
+                  >Preguntas frecuentes</a
+                >
+              </li>
+              <li><a class="text-white" href="">Contacto</a></li>
+              <li>
+                <a class="text-white" href="Sobre nosotros.html"
+                  >Sobre nosotros</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 col-6 mb-4">
+            <h5>Legal</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a class="text-white" href="#">Términos y condiciones</a>
+              </li>
+              <li><a class="text-white" href="#">Privacidad</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 mb-4">
+            <h5>Seguinos</h5>
+
+            <div class="d-flex gap-3 mt-3">
+              <a class="text-white" href="#" class="social"> Facebook </a>
+
+              <a class="text-white" href="#" class="social"> Instagram </a>
+
+              <a class="text-white" href="#" class="social"> X </a>
+            </div>
+          </div>
+        </div>
+        <hr />
+
+        <div
+          class="d-flex justify-content-between align-items-center flex-wrap"
+        >
+          <p class="mb-0 text-secondary mx-auto">
+            © 2026 Cineversed. Todos los derechos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-       <div
+    <div
       class="modal fade"
       id="exampleModal"
       tabindex="-1"
@@ -210,9 +218,7 @@
           <div class="modal-body">
             <form action="./error404.html">
               <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label"
-                  >Email</label
-                >
+                <label for="exampleInputEmail1" class="form-label">Email</label>
                 <input
                   type="email"
                   class="form-control"
@@ -220,7 +226,6 @@
                   aria-describedby="emailHelp"
                   required
                 />
-               
               </div>
               <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label"
@@ -229,12 +234,14 @@
                 <input
                   type="password"
                   class="form-control"
-                  id="exampleInputPassword1" 
+                  id="exampleInputPassword1"
                   required
                 />
               </div>
-            
-              <button type="submit" class="btn btn-primary">Iniciar Sesion</button>
+
+              <button type="submit" class="btn btn-primary">
+                Iniciar Sesion
+              </button>
             </form>
           </div>
         </div>
