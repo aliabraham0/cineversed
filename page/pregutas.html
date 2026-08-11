@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -84,7 +84,12 @@
                 placeholder="Buscar películas"
                 aria-label="Buscar películas"
               />
-              <a href="#" class="btn btn-outline-light btn-god gap-2  text-nowrap">
+              <a
+                href="#"
+                class="btn btn-outline-light btn-god gap-2 text-nowrap"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
                 Iniciar sesión
               </a>
               <a href="#" class="btn btn-danger"> Suscribirse </a>
@@ -206,7 +211,6 @@
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#pregunta5"
-               
               >
                 ¿Cineversed tiene un período de prueba gratuito?
               </button>
@@ -230,7 +234,6 @@
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#pregunta6"
-             
               >
                 ¿Cuánto dura el período gratuito?
               </button>
@@ -253,7 +256,6 @@
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#pregunta7"
-              
               >
                 ¿Qué planes de suscripción ofrece Cineversed?
               </button>
@@ -277,7 +279,6 @@
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#pregunta8"
-            
               >
                 ¿Cómo puedo suscribirme a un plan?
               </button>
@@ -301,7 +302,6 @@
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#pregunta9"
-               
               >
                 ¿Puedo cancelar mi suscripción?
               </button>
@@ -325,7 +325,6 @@
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#pregunta10"
-              
               >
                 ¿Puedo utilizar Cineversed desde mi celular?
               </button>
@@ -349,7 +348,6 @@
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#pregunta11"
-               
               >
                 ¿Qué hago si tengo problemas para acceder a mi cuenta?
               </button>
@@ -423,7 +421,9 @@
                   >Preguntas frecuentes</a
                 >
               </li>
-              <li><a class="text-white" href="../page/error404.html">Contacto</a></li>
+              <li>
+                <a class="text-white" href="../page/error404.html">Contacto</a>
+              </li>
               <li>
                 <a class="text-white" href="Sobre nosotros.html"
                   >Sobre nosotros</a
@@ -437,9 +437,15 @@
 
             <ul class="list-unstyled">
               <li>
-                <a class="text-white" href="../page/error404.html">Términos y condiciones</a>
+                <a class="text-white" href="../page/error404.html"
+                  >Términos y condiciones</a
+                >
               </li>
-              <li><a class="text-white" href="../page/error404.html">Privacidad</a></li>
+              <li>
+                <a class="text-white" href="../page/error404.html"
+                  >Privacidad</a
+                >
+              </li>
             </ul>
           </div>
 
@@ -472,5 +478,57 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content contenedor-color text-white">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Iniciar Sesion
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="./page/error404.html">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >contraseña</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  required
+                />
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+                Iniciar Sesion
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
